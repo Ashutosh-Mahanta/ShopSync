@@ -27,7 +27,6 @@ It helps shop owners manage inventory, billing, customers, and sales from one un
 | HTML, CSS, JS  | Node.js, Express.js | MySQL    |
 
 ---
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -36,6 +35,7 @@ It helps shop owners manage inventory, billing, customers, and sales from one un
 git clone https://github.com/Ashutosh-Mahanta/ShopSync.git
 cd ShopSync
 
+```
 
 👤 Author
 Ashutosh Mahanta
@@ -44,3 +44,7 @@ B.Sc. Information Technology & Management
 
 📄 License
 This project is licensed under the [MIT License](LICENSE).
+
+
+
+
