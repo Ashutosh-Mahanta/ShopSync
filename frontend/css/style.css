@@ -1,0 +1,152 @@
+/* Global Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f5f5f5 url('../assets/background.webp') no-repeat center center/cover;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .form-container {
+    background: #1e1e1e;
+}
+
+/* Panels */
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.left-panel {
+    width: 50%;
+}
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .form-container {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+/* Smooth Page Load */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f5f5f5 url('../assets/background.webp') no-repeat center center/cover;
+    color: black;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Page Fade-in Effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Form Slide-in Effect */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Dark Mode Smooth Transition */
+.dark-mode {
+    background: #121212;
+    color: white;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.dark-mode .form-container {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+/* Button Glow Effect */
+button {
+    background: teal;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #006666;
+    box-shadow: 0 0 10px rgba(0, 128, 128, 0.7);
+}
+
+/* Add a Dark Overlay to Background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: -1;
+}
+
+/* Text Enhancements */
+h1, h2, p {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Login Box Adjustments */
+.form-container {
+    background: rgba(255, 255, 255, 0.95); /* Increased contrast */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
