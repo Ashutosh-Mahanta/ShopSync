@@ -27,6 +27,33 @@ It helps shop owners manage inventory, billing, customers, and sales from one un
 | HTML, CSS, JS  | Node.js, Express.js | MySQL    |
 
 ---
+
+
+## Install Backend Dependencies
+```
+  cd backend
+npm install
+```
+
+
+## Configure .env File
+Create a .env file inside the backend folder:
+```
+  DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=shopsync
+DB_PORT=3306
+PORT=5000
+```
+
+
+## Run Server
+```
+  npm start
+```
+
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
